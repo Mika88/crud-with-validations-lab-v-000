@@ -3,3 +3,4 @@
 <p><%= @song.artist_name %></p>
 <p><%= @song.released %></p>
 <p><%= @song.genre %></p>
+<%= link_to "Delete", songs_path, method: :delete, data: { confirm: "Really?" } %>
