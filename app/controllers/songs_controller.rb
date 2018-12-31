@@ -38,7 +38,7 @@ class SongsController < ApplicationController
   def destroy
     binding.pry
     Song.destroy(params[:id])
-    redirect_to song_url
+    redirect_to songs_path
   end
 
   private
