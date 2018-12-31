@@ -36,6 +36,7 @@ class SongsController < ApplicationController
   end
 
   def destroy
+    binding.pry
     Song.destroy(params[:id])
     redirect_to song_url
   end
