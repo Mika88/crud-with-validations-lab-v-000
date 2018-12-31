@@ -39,6 +39,7 @@ class SongsController < ApplicationController
     Song.find(params[:id]).destroy
     redirect_to song_url
   end
+
   private
 
   def song_params
