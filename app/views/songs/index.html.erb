@@ -8,7 +8,7 @@
     <tbody>
      <tr>
        <td><%= song.title %></td>
-       <td><%= link_to "Delete", song, method: :delete, data: { confirm: "Really?" } %></td>
+       <%= link_to "Delete", song, method: :delete, data: { confirm: "Really?" } %>
      </tr>
     </tbody>
   <% end %>
